@@ -1,0 +1,128 @@
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Kaffetår´n</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- i <body> har man alt indhold på siden som brugeren kan se -->
+<body>
+
+<section class="landingpage">
+    <div class="layout">
+        <div class="landingcontent">
+            <img class="logo" src="images/logo.png">
+            <h4>Tryk på pilen og læs mere!</h4>
+            <a href="#main">
+                <img src="images/arrow.png">
+            </a>
+        </div>
+    </div>
+
+    <div class="video">
+        <video src="images/kaffevideo.mp4" playsinline autoplay muted loop></video>
+    </div>
+
+</section>
+
+<section id="main" class="indhold">
+    <h1 id="cafe">Hvad er Kaffetår´N?</h1>
+    <br>
+    <br>
+    <h2 id="minkaffe">Min kaffe</h2>
+    <br>
+    <img class="billede" src="images/billede1.JPG">
+    <br>
+    <p id="p1">Kaffe har stor betydning for mig. Selve det at tage en kop kaffe med en anden person er at dele tid. Tid er jo vigtigt. Mine kaffer er økologiske
+    og er maskine-kværnet (stadig med kærlighed). I min café fås kun den bedste, økologiske og lokale kaffe. Og så kan det godt være, at den er maskine kværnet, og ikke
+    kværnet i hånden, men det gør den ikke mindre god, det lover jeg!</p>
+    <br>
+    <br>
+    <br>
+    <h2 id="oplevelser">Oplevelser</h2>
+    <br>
+    <img class="billede" src="images/billede2.JPG">
+    <br>
+    <p id="p2">Hos mig er der plads til alle, store som små. Jeg vil gerne garantere, at du vil synes om det hyggelige miljø. Så tag din mor med, din veninde, din søster, eller kom alene og få en sludder for en sladdder!
+    jeg bidder ikke, men leverer derimod godt selskab!<br> Min café er en unik oplevelse i sig selv, da de fleste ting er genbrugsvarer, hvilket er med til at give en stemning af hygge og sikkerhed.<br>
+    </p>
+    <br>
+    <br>
+    <br>
+    <h2 id="bagvaerk">Bagværk</h2>
+    <br>
+    <img class="billede" src="images/billede3.JPG">
+    <br>
+    <p id="p3">Trods, at det kan være tidskrævende, at stå tidligt op og bage mit eget brød, så æner jeg at gøre det alligevel. Kvaliteten er ikke noget jeg går på kompromis med, og da
+    jeg bager et afsindigt godt brød, så går det jo op i en højere enhed. Alle caféens råvarer er hentet ind hos de lokale, og dét er lækkert!<br>Alle mine sandwiches er lavet med hjemmelavet brød, og økologiske lokale råvarer og en hel masse kærlighed.
+        <br>Jeg bager også hjemmelavet kager til allergikere, jeg bager laktosefrie og glutenfrie kager. Kaffen kan også laves til behov.
+    </p>
+</section>
+<br>
+
+<section class="kom">
+    <div class="container">
+        <div class="left">
+            <img id="vandtarn" src="images/torn.jpg">
+        </div>
+        <div class="right">
+            <div class="content">
+                <h1>Kom og find mig, jeg bor i et kæmpe gult tårn!</h1>
+                <p> Psst! Og hvis du lover, at bringe godt humør og et smil på læben, så lover jeg, ikke at gå på kompromis med service, og god kaffe!
+                    Og så har jeg lavet en lille video, som ovenikøbet viser vej til mit tårn!</p>
+                <a href="https://youtu.be/qtzXCA7eMGQ" class="btn">Find vej her</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+
+<div class="footer">
+    <footer>
+        <!-- Footer main -->
+        <section class="ft-main">
+            <div class="ft-main-item">
+                <ul class="links">
+                    <li><a id="find">Find caféen her:</a></li>
+                    <li><a>Hollands Gaard 30</a></li>
+                    <li><a>4800 Nykøbing F</a></li>
+                </ul>
+            </div>
+            <div class="ft-main-item">
+                <ul class="links">
+                    <p id="kontaktop">
+                        <i class="fab fa-facebook" style="width: 26px"></i> <a href="https://www.facebook.com/kaffetaarn">@Kaffetår'N</a><br>
+                        <i class="fab fa-instagram" style="width: 26px"></i> <a href="https://www.instagram.com/kaffetaarn/">@Kaffetår'N</a><br>
+                        <i class="fas fa-envelope" style="width: 26px"></i> kaffetaarn@gmail.com
+                    </p>
+                </ul>
+            </div>
+        </section>
+    </footer>
+</div>
+
+
+<!-- Her skal sidens indhold ligge -->
+
+</body>
+</html>

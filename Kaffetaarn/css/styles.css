@@ -1,0 +1,258 @@
+* { /* Gælder alt på hele siden */
+    box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen, padding mv. */
+}
+
+/* Ovenstående kode kan give problemer ved nogle 3. parts scripts man henter. Men det gør det nemmere at forstå og lave kodning når man starter. */
+
+body {
+    margin: 0; /* Ingen kanter i siden af browser */
+    background: #1e1f26;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; /* Ingen ydre margen fra overskrifter */
+    padding: 0; /* Ingen indre margen fra overskrifter */
+    color: #d89866;
+}
+
+ul, ol {
+    margin: 2px 10px 2px 10px; /* Mindre margen på punkter */
+    padding: 0; /* Ingen indre margen fra lister */
+    list-style-position: inside; /* List punkter står på linje */
+}
+
+li {
+    margin: 0; /* Ingen ydre margen fra listpunkter */
+}
+
+p {
+    margin: 0; /* Ingen ydre margen fra paragraffer */
+    padding: 0; /* Ingen indre margen fra paragraffer */
+    color: white;
+}
+
+/* Sikrer billeder er responsive */
+img {
+    max-width: 100%; /* Bredde må maks fylde 100% */
+    height: auto; /* Højden skal tilpasse sig */
+    border-radius: 100px;
+}
+a{
+    color: white;
+}
+p{
+    font-family: noto-sans,sans-serif;
+    line-height: 1.5;
+}
+.logo{
+    padding-top: 25%;
+    padding-bottom: 10%;
+}
+.landingpage {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    opacity: 0.9;
+    max-width: 50%;
+    margin: auto;
+}
+
+.landingpage h1 {
+    font-weight: 600;
+    font-size: 200%;
+    color: whitesmoke;
+}
+
+.landingpage h4 {
+    font-size: 100%;
+    color: #d89866;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.layout {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 1;
+}
+
+.landingcontent {
+    z-index: 2;
+    text-align: center;
+}
+#main.indhold{
+    width: 75%;
+    margin: auto;
+}
+.billede{
+    width: 100%;
+    padding-bottom: 20px;
+}
+.kom {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2C2B3B;
+}
+
+#vandtarn {
+    border-radius: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+.left {
+    width: 50%;
+    height: 600px;
+    background: #d89866;
+    border-radius: 8px;
+
+}
+.right {
+    width: 50%;
+    padding-left: 10px;
+
+}
+.right h1 {
+    font-size: 40px;
+    font-weight: lighter;
+}
+.right p {
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 25px;
+}
+.right a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+
+.indhold {
+    text-align: justify;
+    align-content: center;
+    margin: 100px;
+}
+
+.indhold h2 {
+    text-align: center;
+}
+
+.indhold h1 {
+    text-align: center;
+    color: white;
+}
+
+#cafe {
+    text-align: center;
+}
+
+.footer {
+    flex: 1;    /* same as flex-grow: 1; */
+    font-family: noto-sans,sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.ft-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.ft-main-item {
+    text-align: center;
+    line-height: 1.7;
+}
+.ft-main-item #find{
+    border-bottom: 2px solid white;
+}
+
+footer {
+    background-color: #442f2b;
+    line-height: 1.5;
+}
+footer a {
+    text-decoration: none;
+}
+
+.links{
+    list-style-type: none;
+}
+p#kontaktop{
+    padding: 0;
+}
+.ft-social {
+    padding: 0 1.875rem 1.25rem;
+}
+.ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px white solid;
+    padding-top: 1.25rem;
+}
+.ft-social-list li {
+    list-style-type: none;
+    margin: 0.5rem;
+    font-size: 2rem;
+}
+
+@media only screen and (min-width: 700px){
+    .logo{
+        padding-top: 10%;
+        padding-bottom: 3%;
+    }
+    .right{
+        padding-left: 30px;
+    }
+    .ft-main-item{
+        text-align: left;
+    }
+    .ft-main{
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .logo{
+        padding-top: 0;
+    }
+    #cafe{
+        padding-top: 20px;
+        font-size: 30px;
+    }
+   .kom{
+       padding-bottom: 20%;
+       padding-top: 5%;
+   }
+}
